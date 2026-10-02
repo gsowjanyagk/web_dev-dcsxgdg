@@ -1,0 +1,27 @@
+:root {
+    --announce-colour: hsl(40deg 6.98% 8.43%);
+    --body-colour: hsl(38.82deg 34.69% 90.39%);
+    --orange: hsl(14.92deg 80.09% 54.71%);
+    --lime: hsl(74.27deg 84.54% 61.96%);
+    --brown: hsl(28.36deg 65.77% 56.47%);
+    --white: hsl(0deg 0% 100%);
+}
+* { 
+    font-family: 'Poppins', sans-serif; 
+    padding: 0;
+    margin: 0;
+}
+.annonuce {
+    background-color: var(--announce-colour);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-align: center;
+}
+span:nth-child(1), span:nth-child(3) { color: var(--body-colour); }
+span:nth-child(2) { color: var(--lime); }
+span { padding: 0.005rem; }
