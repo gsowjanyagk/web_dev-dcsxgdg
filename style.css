@@ -11,6 +11,10 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background-color: var(--body-colour);
+    color: var(--announce-colour);
+}
 /*Announcement bar*/
 .annonuce {
     background-color: var(--announce-colour);
@@ -74,4 +78,64 @@
     border: none;
     background: none;
     cursor: pointer;
+}
+/*HOME PAGE*/
+/*img bg*/
+
+.home .intro_img {
+    height: 600px;
+    background-image: url(./src/Home/hero_section/image1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+.home .intro_img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.home .intro_img .intro_img_cont {
+    margin-left: 5%;
+    max-width: 600px;
+    z-index: 1;
+    position: relative;
+    display: grid;
+    gap: 0.75rem;
+}
+a.btn {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.5rem;
+}
+a.btn.shop {
+    background-color: var(--lime);
+    color: var(--announce-colour);
+}
+a.btn.shop svg { 
+    fill: var(--announce-colour); 
+    padding: 0;
+}
+a.btn.story {
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section.grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, .5fr));
+    height: 70rem;
+}
+section.grid .box {
+    display: block;
+    height: 100%;
 }
