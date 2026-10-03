@@ -11,17 +11,67 @@
     padding: 0;
     margin: 0;
 }
+/*Announcement bar*/
 .annonuce {
     background-color: var(--announce-colour);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
     font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
+    font-weight: 300;
+    letter-spacing: 0;
     text-align: center;
 }
-span:nth-child(1), span:nth-child(3) { color: var(--body-colour); }
-span:nth-child(2) { color: var(--lime); }
-span { padding: 0.005rem; }
+.annonuce span:nth-child(1), span:nth-child(3) { color: var(--body-colour); }
+.annonuce span:nth-child(2) { color: var(--lime); }
+.annonuce span { padding: 0.005rem; }
+/*nav bar*/
+.header .icons svg { fill: var(--announce-colour); }
+
+.header {
+    background-color: var(--body-colour);
+    border-bottom: 1px solid #E0DDD7;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+.header .cont {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1rem;
+}
+.header .cont .logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    color: var(--announce-colour);
+}
+.header .cont .nav {
+    display: flex;
+    gap: 1rem;
+}
+.header .cont .nav a {
+    text-decoration: none;
+    color: var(--announce-colour);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: opacity 0.3s ease-in-out;
+}
+.nav a:hover, .nav a.active {
+    opacity: 0.5;
+}
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+.icons button {
+    display:inline block;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
